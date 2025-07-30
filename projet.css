@@ -1,0 +1,154 @@
+/* Import font */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F4;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #fff;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3AB54A;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #3AB54A;
+  color: white;
+}
+.hero h1 {
+  font-size: 2.5rem;
+}
+.hero p {
+  margin: 20px 0;
+}
+.cta-button {
+  background-color: white;
+  color: #3AB54A;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Services */
+.services {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.service-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-item {
+  flex: 1 1 250px;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Témoignages */
+.testimonials {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+.testimonial-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.testimonial {
+  flex: 1 1 300px;
+  background-color: #F4F4F4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Formulaire */
+.devis {
+  padding: 60px 20px;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto;
+  gap: 15px;
+}
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background-color: #3AB54A;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+.socials a {
+  margin: 0 10px;
+  color: #3AB54A;
+}
+.legal a {
+  font-size: 14px;
+  color: #777;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .service-list,
+  .testimonial-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
